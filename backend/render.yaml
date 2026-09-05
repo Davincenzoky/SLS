@@ -1,0 +1,19 @@
+# Render deployment configuration
+# Save as render.yaml in backend directory
+
+services:
+  - type: web
+    name: sign-language-interpreter-api
+    env: python
+    region: oregon
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+    disk:
+      name: data-disk
+      mountPath: /app/data
+      sizeGB: 1
+    healthCheckPath: /health

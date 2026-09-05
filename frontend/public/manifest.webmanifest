@@ -1,0 +1,35 @@
+{
+  "name": "Sign Language Interpreter",
+  "short_name": "SignInterpret",
+  "description": "Real-time ASL to text/speech interpreter",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "utilities", "accessibility"],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Start Interpreting",
+      "short_name": "Interpret",
+      "description": "Start the camera and begin interpreting",
+      "url": "/?autoStart=true",
+      "icons": [{ "src": "pwa-192x192.png", "sizes": "192x192" }]
+    }
+  ]
+}

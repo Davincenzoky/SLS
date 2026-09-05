@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/components/controls.tsx","./src/components/predictionpanel.tsx","./src/components/videofeed.tsx","./src/hooks/useaslclassifier.ts","./src/hooks/usehanddetection.ts","./src/types/index.ts","./src/utils/speech.ts"],"version":"5.6.3"}
