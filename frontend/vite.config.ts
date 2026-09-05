@@ -32,6 +32,9 @@ export default defineConfig({
       }
     })
   ],
+  define: {
+    'import.meta.env.VITE_API_URL': JSON.stringify(process.env.VITE_API_URL || 'http://localhost:8000')
+  },
   server: {
     port: 5173,
     proxy: {

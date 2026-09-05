@@ -10,9 +10,12 @@ from pathlib import Path
 
 app = FastAPI(title="ASL Interpreter API", version="0.1.0")
 
+# CORS configuration - use env var in production, allow all in development
+ALLOWED_ORIGINS = os.getenv("ALLOWED_ORIGINS", "*").split(",")
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=ALLOWED_ORIGINS,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
